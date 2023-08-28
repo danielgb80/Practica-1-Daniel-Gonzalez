@@ -96,7 +96,7 @@ h2 {
 }
 
 
-/*.hero-banner {
+.hero-banner {
     background-color: gray;
     height: 25vh;
     border: solid 3px orange;
@@ -105,7 +105,7 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-*/
+
 header {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 56, 234, 1) 0%, rgba(10, 106, 234, 1) 52%, rgba(10, 169, 234, 1) 73%);
