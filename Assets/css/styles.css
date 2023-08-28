@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sedgwick+Ave+Display&display=swap');
+
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: black;
+    background-color: yellowgreen;
+    margin: 0;
+}
+
+.slideshow {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    width: 400%;
+    animation: slide 15s ease infinite;
+}
+
+
+.slide {
+    float: left;
+    height: 500px;
+    width: 25%;
+}
+
+.slide:nth-child(1) {
+    background-image: url("../imagenes/productos\ de\ animales.jpg");
+    background-size: 100%;
+}
+
+.slide:nth-child(2) {
+    background-image: url("../imagenes/gatos\ jugando\ slide.jpg");
+    background-size: cover;
+}
+
+.slide:nth-child(3) {
+    background-image: url("https://shorturl.at/sAHTW");
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    40% {
+        margin-left: -100%;
+    }
+
+    60% {
+        margin-left: -100%;
+    }
+
+    80% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+h2 {
+
+    font-family: 'ADLaM Display', cursive;
+}
+
+.container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 56, 234, 1) 0%, rgba(10, 106, 234, 1) 52%, rgba(10, 169, 234, 1) 73%);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 50vh;
+    margin: 0;
+}
+
+
+/*.hero-banner {
+    background-color: gray;
+    height: 25vh;
+    border: solid 3px orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+*/
+header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 56, 234, 1) 0%, rgba(10, 106, 234, 1) 52%, rgba(10, 169, 234, 1) 73%);
+    font-size: 20px;
+    font-family: 'ADLaM Display', cursive;
+    padding: 0px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 10px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    margin-right: 35px;
+
+}
+
+.container2 {
+    display: grid;
+    grid-template-rows: auto;
+    background-image: url("../imagenes/perro\ -\ copia.jpg");
+    height: 600px;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.text-container2 {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 30px;
+    top: 35%;
+
+
+}
+
+.hero-text {
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: relative;
+    font-size: 30px;
+    padding-top: 10%;
+}
+
+
+.main-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    padding: 45px;
+
+}
+
+.main-item {
+    padding: 30px;
+    color: white;
+    font-size: 18px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    padding: 0;
+}
+
+
+.registration-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    color: gray;
+    background-color: white;
+    padding: 0px;
+    text-align: center;
+    margin: 0;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}*/
+}
+
+.footer-logo {
+    width: 45px;
+    height: 45px;
+}
+
+.redes-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 45px;
+}
+
+.redes-container ul li {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 50px;
+    height: 0px;
+}
+
+.redes-container ul li a {
+    display: block;
+    padding: 0;
+    background: white;
+    color: black;
+    line-height: 50px;
+    font-size: 22px;
+    box-shadow: 0 3px 5px 0px gray;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.redes-container ul:hover a {
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px gray;
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+    background: var(--facebook);
+    color: white;
+}
+
+.redes-container ul li .Instagram:hover {
+    background: var(--instagram);
+    color: white;
+}
+
+.redes-container ul li .Twitter:hover {
+    background: var(--twitter);
+    color: white;
+}
+
+.fotter1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 56, 234, 1) 0%, rgba(10, 106, 234, 1) 52%, rgba(10, 169, 234, 1) 73%);
+
+}
+
+.footer-link {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5%;
+
+}
+
+.footer-link a {
+
+    font-style: italic;
+    color: white;
+    width: 50%;
+}
+
+.derechos {
+    display: grid;
+}
+
+@media (max-width: 1000px) {
+
+    .product-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        ;
+        /* Espacio entre las imágenes */
+    }
+
+    .product-item {
+        padding: 40px;
+    }
+
+    .main-section {
+        display: block;
+    }
+
+    .slide:nth-child(2) {
+        background-image: url("../imagenes/gatos\ jugando\ slide.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container2 {
+        background-position: 52%;
+    }
+
+    .fotter1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer-link {
+        height: 180px;
+        padding-top: 0;
+        padding-right: 0;
+
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .product-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        /* Espacio entre las imágenes */
+    }
+
+
+    .main-item {
+        padding: 30px;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 20px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .slide:nth-child(1) {
+        background-size: auto;
+    }
+
+    .slide:nth-child(2) {
+        background-image: url("../imagenes/gatos\ jugando\ slide.jpg");
+        background-size: cover;
+        background-position: 50%;
+        background-position-x: 20%;
+    }
+
+}
